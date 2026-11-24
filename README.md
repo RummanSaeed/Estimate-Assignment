@@ -9,7 +9,8 @@ Node.js **20.9+**, free [Supabase](https://supabase.com) project.
 ```bash    
 npm install
 cp .env.local.template .env.local   # fill Supabase URL + keys
-# Run supabase/schema.sql in the Supabase SQL Editor
+# Run supabase/schema.sql then supabase/seed-roles.sql in the Supabase SQL Editor
+npm run seed:users                  # creates login users (password: Test1234!)
 npm run dev                        # http://localhost:3000
 ```
 
